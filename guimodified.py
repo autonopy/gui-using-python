@@ -76,11 +76,12 @@ def action():
     age_box.delete(0,tk.END)
     email_box.delete(0,tk.END)
     message=f"Your name is {uname}\nYour age is {uage}\nYour gender is {ubutton}\nYou are a {uradio}\n Thankyou for giving feedback!!!"
-    connection=smtplib.SMTP('smtp.gmail.com',587)
-    connection.ehlo()
-    connection.starttls()
-    connection.login('sagarguptasargam123@gmail.com',"srg@2909")
-    connection.sendmail('sagarguptasargam123@gmail.com',uemail,message)
+    print(message)
+#     connection=smtplib.SMTP('smtp.gmail.com',587)
+#     connection.ehlo()
+#     connection.starttls()
+#     connection.login('sagarguptasargam123@gmail.com',"srg@2909")
+#     connection.sendmail('sagarguptasargam123@gmail.com',uemail,message)
    
 submit_button=ttk.Button(win,width=16,text='Submit',command=action)
 submit_button.grid(row=6,column=0)
